@@ -21,7 +21,7 @@
             <div class="col-md-8">
                 <div class="row no-gutters bg-color-name-title">
                     <div class="col heading">
-                        <h1 class="name">Rosie Odenkirk</h1>
+                        <h1 class="name">Cristiano Bertacco</h1>
                         <h2 class="title">Full Stack Developer</h2>
                     </div>
                 </div>
@@ -197,9 +197,20 @@
         </div>
 
     </footer>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
-    <script src="assets/js/maps.js"></script>
+    <script>
+    function initMap(){
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 3,
+                center: {
+                    lat: 46.619261,
+                    lng: -33.134766
+                }
+
+        });
+    }
+    </script>
+     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwOm2A_Y0uyu5se2Ek1lRW-plzQLgciG0&callback=initMap"></script>
 </body>
 
 </html>
